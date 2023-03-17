@@ -1,13 +1,13 @@
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 #include <stdio.h>
 
-/**
- * main function - Print exact message without prinf
- *
- * Return: program should end with 0.
- */
-int main()
+int main(void)
 {
-	char message[] = "\"Programming is like building a multilingual puzzle";	
-	puts(message);
-	return (0);
+    char str[] = "\"Programming is like building a multilingual puzzle";
+    puts(str);
+    return (0);
 }
