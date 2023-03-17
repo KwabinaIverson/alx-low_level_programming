@@ -3,18 +3,18 @@
 /**
  * main - Entry point
  *
- * Return: Always 1 (error)
+ * This program prints a message to the standard error.
+ *
+ * Return: Always 1 (Error code)
  */
 int main(void)
 {
-const char str[] = "and that piece of art is useful\""
-+" - Dora Korpar, 2015-10-19\n";
-ssize_t len = sizeof(str) - 1;
-
-/* Use the write system call to print to stderr */
-if (write(2, str, len) != len)
-return (1);
-
+char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+int len = 0;
+while (str[len] != '\0')
+{
+len++;
+}
+write(STDERR_FILENO, str, len);
 return (1);
 }
-
