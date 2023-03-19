@@ -6,6 +6,9 @@
 /**
 * main - Entry point of the program
 *
+* Description: Assigns a random number to the variable n and prints 
+* 	whether it is positive or negative
+*
 * Returns: Always 0
 */
 int main(void)
