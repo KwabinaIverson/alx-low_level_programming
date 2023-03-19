@@ -4,10 +4,9 @@
 /* more headers goes there */
 
 /**
-* main - Entry point
-* Description: Uses conditional statements to print a value based on n
-* Parameter: n contains random rounded number
-* Returns: 0 as success
+* main - Entry point of the program
+*
+* Returns: Always 0
 */
 int main(void)
 {
