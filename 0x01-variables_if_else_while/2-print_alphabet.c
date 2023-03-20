@@ -10,11 +10,16 @@
  */
 int main(void)
 {
-char letters[25] = "abcdefghijklmnopqrstuvwxyz";
+char letters[] = "abcdefghijklmno";
+char letter2[] = "pqrstuvwxyz";
 int i = 0;
-while (i++ <= 25)
+while (i++ <= 14)
 {
 putchar(letters[i]);
+}
+while (i++ <= 10)
+{
+putchar(letter2[i]);
 }
 return (0);
 }
