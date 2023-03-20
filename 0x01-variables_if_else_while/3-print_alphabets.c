@@ -10,8 +10,8 @@
 int main(void)
 {
 char letterA[] = "abcdefghijklmnopqr";
-char letterB[] = "stuvwxyzABCDEFGHIJ";
-char letterC[] = "KLMNOPQRSTUVWXYZ";
+char letterB[] = "stuvwxyzABCDEFGHIJK";
+char letterC[] = "LMNOPQRSTUVWXYZ";
 int i = 0;
 while (i <= 17)
 {
@@ -20,18 +20,18 @@ i++;
 if (i == 17)
 {
 i = 0;
-while (i <= 17)
+while (i <= 18)
 {
 putchar(letterB[i]);
 i++;
-if (i == 17)
+}
+if (i <= 18)
 {
 i = 0;
-while (i <= 15)
+while (i <= 14)
 {
 putchar(letterC[i]);
 i++;
-}
 }
 }
 }
