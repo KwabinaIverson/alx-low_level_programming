@@ -7,7 +7,7 @@
  *
  * Return: 0 is success
  */
-int main()
+int main(void)
 {
 char letterA[] = "abcdfghijklm";
 char letterB[] = "noprstuvwxyz";
@@ -18,7 +18,7 @@ while (i <= lengthA - 1)
 {
 putchar(letterA[i]);
 i++;
-if (i == 14)
+if (i == 13)
 {
 i = 0;
 while (i <= lengthB - 1)
