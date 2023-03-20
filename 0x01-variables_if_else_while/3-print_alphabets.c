@@ -15,7 +15,7 @@ char letterC[] = "LMNOPQRSTUVWXYZ";
 int i = 0;
 int lengthA = sizeof(letterA) / sizeof(letterA[0]);
 int lengthB = sizeof(letterB) / sizeof(letterB[0]);
-int legthC = sizeof(letterC) / sizeof(letterC[0]);
+int lengthC = sizeof(letterC) / sizeof(letterC[0]);
 while (i <= lengthA - 1)
 {
 putchar(letterA[i]);
