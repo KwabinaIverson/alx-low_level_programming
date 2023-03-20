@@ -21,7 +21,7 @@ i++;
 if (i == 13)
 {
 i = 0;
-while (i <= lengthB - 1)
+while (i <= lengthB - 2)
 {
 putchar(letterB[i]);
 i++;
