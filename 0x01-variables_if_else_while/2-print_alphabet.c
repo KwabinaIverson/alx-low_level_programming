@@ -21,7 +21,7 @@ i++;
 while (i <= 10)
 {
 putchar(letter2[i]);
-i++
+i++;
 }
 return (0);
 }
