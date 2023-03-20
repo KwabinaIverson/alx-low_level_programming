@@ -13,21 +13,24 @@ char letterA[] = "abcdefghijklmnopqr";
 char letterB[] = "stuvwxyzABCDEFGHIJK";
 char letterC[] = "LMNOPQRSTUVWXYZ";
 int i = 0;
-while (i <= 17)
+int lengthA = sizeof(letterA) / sizeof(letterA[0]);
+int lengthB = sizeof(letterB) / sizeof(letterB[0]);
+int legthC = sizeof(letterC) / sizeof(letterC[0]);
+while (i <= lengthA - 1)
 {
 putchar(letterA[i]);
 i++;
-if (i == 17)
+if (i == 19)
 {
 i = 0;
-while (i <= 18)
+while (i <= lengthB -1)
 {
 putchar(letterB[i]);
 i++;
-if (i == 18)
+if (i == 20)
 {
 i = 0;
-while (i <= 14)
+while (i <= lengthC - 1)
 putchar(letterC[i]);
 i++;
 }
