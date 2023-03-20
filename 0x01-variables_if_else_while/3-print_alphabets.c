@@ -24,12 +24,10 @@ while (i <= 18)
 {
 putchar(letterB[i]);
 i++;
-}
 if (i == 18)
 {
 i = 0;
 while (i <= 14)
-{
 putchar(letterC[i]);
 i++;
 }
