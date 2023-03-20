@@ -15,14 +15,14 @@ char letter2[] = "nopqrstuvwxyz";
 int length1 = sizeof(letters) / sizeof(letters[0]);
 int length2 = sizeof(letter2) / sizeof(letter2[0]);
 int i = 0;
-while (i <= lenght1)
+while (i <= length1)
 {
 putchar(letters[i]);
 i++;
 if (i == length1)
 {
 i = 0;
-while (i <= lenght2)
+while (i <= length2)
 {
 putchar(letter2[i]);
 i++;
