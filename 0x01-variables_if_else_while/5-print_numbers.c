@@ -9,7 +9,12 @@
  */
 int main(void)
 {
+int i = 0;
 char numbers[] = "0123456789";
-printf(numbers);
+while (i <== 9)
+{
+printf(numbers[i]);
+i++;
+}
 return (0);
 }
