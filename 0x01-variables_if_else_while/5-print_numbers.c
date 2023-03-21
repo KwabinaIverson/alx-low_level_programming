@@ -11,9 +11,9 @@ int main(void)
 {
 int i = 0;
 char numbers[] = "0123456789";
-while (i <== 9)
+while (i <= 9)
 {
-printf(numbers[i]);
+putchar(numbers[i]);
 i++;
 }
 return (0);
