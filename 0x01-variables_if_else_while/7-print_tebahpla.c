@@ -9,11 +9,8 @@
  */
 int main(void)
 {
-char letterA[] = "zyxwvutsrqpon";
-char letterB[] = "mlkjihgfedcba";
-int i = 0;
 char c = 'z';
-while (c >= 12)
+while (c >= 'a')
 {
 putchar(c);
 c--;
