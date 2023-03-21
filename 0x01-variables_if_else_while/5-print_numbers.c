@@ -14,8 +14,8 @@ char numbers[] = "0123456789";
 while (i <= 9)
 {
 putchar(numbers[i]);
-putchar("\n");
 i++;
 }
+printf("\n");
 return (0);
 }
