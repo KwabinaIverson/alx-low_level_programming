@@ -13,9 +13,9 @@ char myWord[] = "_putchar";
 int i = 0;
 while (i <= 7)
 {
-putchar(myWord[i]);
+_putchar(myWord[i]);
 i++;
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
