@@ -12,19 +12,12 @@ int main(void)
 char letterA[] = "zyxwvutsrqpon";
 char letterB[] = "mlkjihgfedcba";
 int i = 0;
-while (i <= 12)
+char c = 'z';
+while (c >= 12)
 {
-putchar(letterA[i]);
-i++;
+putchar(c);
+c--;
 }
-if (i == 12)
-{
-i = 0;
-while (i <= 12)
-{
-putchar(letterB[i] + "\n");
-i++;
-}
-}
+putchar('\n');
 return (0);
 }
