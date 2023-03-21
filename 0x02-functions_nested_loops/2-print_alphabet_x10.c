@@ -13,10 +13,10 @@ while (times <= 10)
 char myChar = 'a';
 while (myChar <= 'z')
 {
-putchar(myChar);
+_putchar(myChar);
 myChar++;
 }
-putchar('\n');
+_putchar('\n');
 times++;
 }
 }
