@@ -7,13 +7,16 @@
  *
  * Return: 0 is success
  */
-int main()
+int main(void)
 {
 int i = 0;
-while (i < 16) {
+while (i < 16)
+{
 if (i < 10) {
 putchar(i + '0');
-} else {
+}
+else
+{
 putchar(i - 10 + 'a');
 }
 i++;
