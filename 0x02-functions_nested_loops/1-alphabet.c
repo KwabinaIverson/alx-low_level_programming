@@ -15,16 +15,3 @@ letter++;
 }
 _putchar('\n');
 }
-
-/**
- * main - entry point of the program
- *
- * Description: print_alphabet funtion is nested in main function
- *
- * Return: 0 is success
- */
-int main(void)
-{
-print_alphabet();
-return (0);
-}
