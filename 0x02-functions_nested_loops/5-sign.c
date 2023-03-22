@@ -3,6 +3,8 @@
 /**
  * print_sign - int type and arguement of int type
  *
+ * @n: The integer to be checked using conditional statements
+ *
  * Description: n is an arguement of int in print_sign functions
  *
  * Return: + and 1 if n is greater than 0, 0 if n is equal to 0, and
