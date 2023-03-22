@@ -23,4 +23,5 @@ int remain = n % 10;
 _putchar(remain);
 return (remain);
 }
+return (0);
 }
