@@ -11,17 +11,7 @@
  */
 int print_last_digit(int n)
 {
-if (n % 10 >= 0 && n % 10 <= 9)
-{
-int remainder = n % 10;
-_putchar(remainder);
-return (remainder);
-}
-else if (n % 10 < 0)
-{
-int remain = n % 10;
-_putchar(remain);
-return (remain);
-}
-return (0);
+int last_digit = n % 10;
+_putchar(last_digit + '0');
+return (last_digit);
 }
