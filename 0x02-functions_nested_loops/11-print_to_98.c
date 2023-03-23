@@ -16,7 +16,7 @@ if ( n <= 98)
 while (n <= 98)
 {
 _putchar(n + '0');
-in++;
+n++;
 }
 }
 else if (n >= 98)
