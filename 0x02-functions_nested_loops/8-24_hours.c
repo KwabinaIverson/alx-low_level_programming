@@ -7,7 +7,8 @@
  *
  * Return: It's void
  */
-void jack_bauer(void) {
+void jack_bauer(void)
+{
 int hour = 0;
 int minute = 0;
 while (hour < 24)
