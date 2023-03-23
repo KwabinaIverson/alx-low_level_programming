@@ -3,7 +3,9 @@
 /**
  * add - returns int type and takes two int type arguments
  *
- * @num1, @num2: The integers to be added
+ * @num1: The integer to be added
+ *
+ * @num2: The integer to be added
  *
  * Description: Adds integers an returns the result
  *
