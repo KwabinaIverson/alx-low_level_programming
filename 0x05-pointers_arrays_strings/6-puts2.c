@@ -7,10 +7,11 @@
  */
 void print_every_other(char *s)
 {
-while (*s != '\0')
+int i = 0;
+while (*s[i] != '\0')
 {
-_putchar(*s);
-s += 2;
+_putchar(*s[i]);
+i += 2;
 }
-_putchar("\n");
+_putchar('\n');
 }
