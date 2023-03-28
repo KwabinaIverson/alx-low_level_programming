@@ -16,9 +16,9 @@ s++;
 s--;
 while (len > 0)
 {
-putchar(*s);
+_putchar(*s);
 s--;
 len--;
 }
-putchar('\n');
+_putchar('\n');
 }
