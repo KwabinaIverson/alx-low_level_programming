@@ -12,5 +12,5 @@ while (*s != '\0')
 _putchar(*s);
 s += 2;
 }
-putchar("\n");
+_putchar("\n");
 }
