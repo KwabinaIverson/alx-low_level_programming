@@ -5,7 +5,7 @@
  * *         followed by a new line.
  * *
  * * @str: The string to print.
- * */
+ */
 void puts2(char *str)
 {
 int i = 0;
