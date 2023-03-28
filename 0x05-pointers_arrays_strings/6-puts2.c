@@ -1,17 +1,21 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- * print_every_other - prints in 2s
- *
- * @s: The string to print
- */
-void print_every_other(char *s)
+ * * puts2 - Prints every other with the first character,
+ * *         followed by a new line.
+ * *
+ * * @str: The string to print.
+ * */
+void puts2(char *str)
 {
 int i = 0;
-while (s[i] != '\0')
+while (str[i] != '\0')
 {
-_putchar(s[i]);
-i += 2;
+if (i % 2 == 0)
+{
+putchar(str[i]);
 }
-_putchar('\n');
+i++;
+}	
+putchar('\n');
 }
