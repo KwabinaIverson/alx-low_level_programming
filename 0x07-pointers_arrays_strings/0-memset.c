@@ -5,6 +5,7 @@
  * @s: The pointer to replace
  * @b: The constant byte
  * @n: The number of bytes
+ * Description: Fills the buffer.
  * Return: Pointer s
  */
 char *_memset(char *s, char b, unsigned int n)
