@@ -9,10 +9,12 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-char *myptr = dest;
+char* pDest = dest;
+const char* pSrc = src;
 while (n-- > 0)
 {
-*myptr++ = src;
+*pDest++ = *pSrc++;
 }
+return dest;
 return (dest);
 }
