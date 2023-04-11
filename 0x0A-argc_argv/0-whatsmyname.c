@@ -1,9 +1,15 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * func_name - prints the name function from the command line
+ * @argc: Number of arguement
+ * @argv: Array of argument
+ *
+ * Return: Always 0 (success)
  */
-int  main(int argc, char *argv[])
+int  main(int argc __attribute__((unused)), char *argv[])
 {
-_putchar(argv[0]);
+print("%s\n", *argv);
+return (0);
 }
