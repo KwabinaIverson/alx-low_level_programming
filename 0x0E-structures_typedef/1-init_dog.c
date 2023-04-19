@@ -1,4 +1,5 @@
 #include "dog.h"
+#include "main.h"
 
 /**
  * init_dog - uses struct to take information of a dog
