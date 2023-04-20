@@ -15,12 +15,12 @@ unsigned int ind;
 va_start(ad, n);
 for (ind = 0; ind < n; ind++)
 {
-print("%d", va_arg(ad, int));
+printf("%d", va_arg(ad, int));
 if (ind != (n - 1) && seperator != NULL)
 {
-print("%s", seperator);
+printf("%s", seperator);
 }
 }
-print("\n");
+printf("\n");
 return (ad);
 }
