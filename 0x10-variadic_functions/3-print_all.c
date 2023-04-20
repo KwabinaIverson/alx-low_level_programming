@@ -8,19 +8,18 @@
  */
 void print_all(const char * const format, ...)
 {
+int a, b, c = 0;
+float d;
+char p;
 va_list ab;
 va_start(ab, format);
-char a;
-int b, c = 0;
-float d;
-char* p;
 while (format[c] != '\0')
 {
 switch (format[c])
 {
 case 'a':
-a = (char) va_arg(ab, int);
-printf("%c", a);
+a = va_arg(ab, int);
+printf("%c", (char) a);
 break;
 case 'b':
 b = va_arg(ab, int);
@@ -30,15 +29,15 @@ case 'd':
 d = (float) va_arg(ab, double);
 printf("%f", d);
 break;
-case 'p';
-p = va_arg(ab, char);
-if (p == NULL)
+case 'p':
+p = va_arg(ab, int);
+if (p == '\0')
 {
-printf("nil");
+printf("(nil)");
 }
 else
 {
-printf("%s", p);
+printf("%s", &p);
 }
 break;
 default:
