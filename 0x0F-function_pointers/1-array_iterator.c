@@ -6,6 +6,7 @@
  * @array: There array to iterate
  * @size: The size of arrayy
  * @action: Pointer function
+ * Description: Iterate through an array using the pointer function action
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
