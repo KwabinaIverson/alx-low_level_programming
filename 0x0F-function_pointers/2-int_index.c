@@ -6,7 +6,7 @@
  * @array: The array to search
  * @size: The size of array
  * @cmp: Pointer function that searches array
- * 
+ *
  * Return: i or -1 is returned
  */
 int int_index(int *array, int size, int (*cmp)(int))
