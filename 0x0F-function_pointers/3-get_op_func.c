@@ -1,4 +1,3 @@
-#include "function_pointers.h"
 #include "3-calc.h"
 #include <stddef.h>
 
@@ -19,13 +18,9 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i = 0;
-while (ops[i].op != NULL)
+while (ops[i].op != NULL && *(ops[i].op) != *s)
 {
-if (*(ops[i].op) == *s && *(s + 1) != '\0')
-{
-return (ops[i].f);
-}
 i++;
 }
-return (NULL);
+return (ops[i].f);
 }
