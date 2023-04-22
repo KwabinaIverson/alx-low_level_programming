@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * func_name - prints the name function from the command line
+ * main - prints the name function from the command line
  * @argc: Number of arguement
  * @argv: Array of argument
  *
