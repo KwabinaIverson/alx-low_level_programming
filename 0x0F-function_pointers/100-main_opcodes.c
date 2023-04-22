@@ -13,10 +13,10 @@ int main(int argc, char *argv[])
 	int num_bytes, index;
 	int (*addr)(int, char **) = main;
 	unsigned char opcode;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
-	
 		exit(1);
 	}
 
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		opcode = *(unsigned char *)addr;
 		printf("%.2x", opcode);
 
-		if (index == num_bytes - 1 )
+		if (index == num_bytes - 1)
 			continue;
 		printf(" ");
 
