@@ -1,7 +1,8 @@
 #include "lists.h"
 #include <stdio.h>
 
-/** print_list - print the list of nodes
+/**
+ * print_list - print the list of nodes
  * @h: Pointer to the header list
  *
  * Return: The number of nodes
