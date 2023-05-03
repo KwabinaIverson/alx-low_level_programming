@@ -6,7 +6,7 @@ size_t print_listint_safe(const listint_t *head);
 
 /**
  * looped_listint_len - counts unique nodes
- * @h: A pointer to the listint_t to check
+ * @head: A pointer to the listint_t to check
  *
  * Return: 0 or unique node
  */
@@ -50,7 +50,7 @@ size_t looped_listint_len(const listint_t *head)
 }
 
 /**
- * peinr_listint_safe - prints listint_t
+ * print_listint_safe - prints listint_t
  * @head: A pointer to the head
  *
  * Return: Number of nodes
