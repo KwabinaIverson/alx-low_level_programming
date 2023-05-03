@@ -3,6 +3,13 @@
 #include <ctype.h>
 #include "main.h"
 
+/**
+ * main - gets arguements from cmd a adds them
+ * @argc: Arguement count
+ * @argv: Array of arguements from cmd
+ *
+ * Return: Added arguements
+ */
 int main(int argc, char *argv[])
 {
 int sum = 0, i;
