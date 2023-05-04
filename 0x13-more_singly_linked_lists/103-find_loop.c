@@ -21,8 +21,8 @@ while (s != f)
 s = s->next;
 f = f->next;
 }
-return s;
+return (s);
 }
 }
-return NULL;
+return (NULL);
 }
