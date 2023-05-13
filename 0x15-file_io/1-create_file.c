@@ -4,6 +4,7 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <string.h>
 
 /**
  * create_file - create file with the file name and puts conten in it
@@ -24,9 +25,9 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	if (text_content != NULL)
 	{
-		content_lenght = strlen(text_content);
-		bytes_written = write(fd, text_content, content_lenght);
-		if (bytes_written == -1 || bytes_written != content_lenght)
+		content_length = strlen(text_content);
+		bytes_written = write(fd, text_content, content_length);
+		if (bytes_written == -1 || bytes_written != content_length)
 		{
 			close(fd);
 			return (-1);
