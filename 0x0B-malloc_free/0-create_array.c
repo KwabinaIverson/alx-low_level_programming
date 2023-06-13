@@ -7,10 +7,10 @@
  *
  * Return: An array of characters
  */
-char* create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
-	char* array;
+	char *array;
 
 	if (size == 0)
 		return (NULL);
