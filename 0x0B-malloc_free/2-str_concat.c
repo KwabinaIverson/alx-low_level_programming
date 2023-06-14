@@ -10,6 +10,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	size_t i;
+	char *concatenated;
 	size_t len1 = strlen(s1);
 	size_t len2 = strlen(s2);
 	size_t totalLen = len1 + len2 + 1;
@@ -19,13 +21,14 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 == "";
 
-	char *concatenated = malloc(totalLen * sizeof(char));
+	concatenated = malloc(totalLen * sizeof(char));
 	if (concatenated == NULL)
 		return (NULL);
-
-	memcpy(concatenated, s1, len1);
-	memcpy(concatenated + len1, s2, len2);
-	concatenated[totalLen - 1] = '\0';
+	for (i = 0; i < len1; i++)
+		concatenated[i] = s1[i];
+	for (i = 0; i < len2; i++)
+		concatenated[len1 + i] = s2[i];
+	concatenated[len1 + len2] = '\0';
 
 	return (concatenated);
 }
