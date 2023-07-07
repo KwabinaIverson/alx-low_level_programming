@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * binary_to_unit - convert to decimal
+ * binary_to_uint - convert to decimal
  * @b: The character to convert
  * Return: DEcimal number
  */
