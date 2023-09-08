@@ -2,6 +2,7 @@
 
 /**
  * hash_table_set - adds/insert to the hash table
+ * @ht: Address to the hash table
  * @key: The key of the node
  * @value: The value of the node
  * Return: 1 on success otherwise 0
