@@ -10,6 +10,9 @@ SRC = main.c school.c
 # Object files (generate .o filenames from .c filenames)
 OBJ = $(SRC:.c=.o)
 
+# Check for missing header file
+$(NAME): m.h
+
 # Executable name
 NAME = school
 
@@ -23,11 +26,6 @@ $(NAME): $(OBJ)
 # Rule to compile source files to object files
 %.o: %.c
 	$(CC) -c $< -o $@ $(CFLAGS)
-
-# Check for the existence of the m.h header file
-ifeq ($(wildcard m.h),)
-    $(error The header file "m.h" is missing)
-endif
 
 # Clean rule to delete temporary files and the executable
 clean:
