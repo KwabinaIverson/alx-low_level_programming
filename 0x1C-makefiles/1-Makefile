@@ -1,0 +1,14 @@
+# Makefile for building the "school" executable
+
+# Compiler
+CC = gcc
+
+# Source files
+SRC = main.c school.c
+
+# Default target
+all: school
+
+# Compile and link the executable
+school: $(SRC)
+	$(CC) $(SRC) -o school

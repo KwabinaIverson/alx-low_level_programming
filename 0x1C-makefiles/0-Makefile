@@ -1,0 +1,6 @@
+# Target: school
+all: school
+
+# Rule: compile school
+school: school.c
+	gcc main.c school.c -o school
