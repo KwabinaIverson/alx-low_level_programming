@@ -1,0 +1,46 @@
+# Makefile for building the "school" executable
+
+# Compiler and Compiler Flags
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Source files
+SRC = main.c school.c
+
+# Object files (generate .o filenames from .c filenames)
+OBJ = $(SRC:.c=.o)
+
+# Executable name
+NAME = school
+
+# Default target
+all: $(NAME)
+
+# Compile and link the executable
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@ $(CFLAGS)
+
+# Rule to compile source files to object files
+%.o: %.c
+	$(CC) -c $< -o $@ $(CFLAGS)
+
+# Check for the existence of the m.h header file
+ifeq ($(wildcard m.h),)
+    $(error The header file "m.h" is missing)
+endif
+
+# Clean rule to delete temporary files and the executable
+clean:
+	-$(RM) *~ \#*\# $(NAME)
+
+# Rule to delete object files
+oclean:
+	-$(RM) $(OBJ)
+
+# Rule to clean temporary files, the executable, and object files
+fclean: clean oclean
+
+# Rule to force recompilation of all source files
+re: fclean all
+
+.PHONY: all clean oclean fclean re
