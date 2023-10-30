@@ -1,44 +1,20 @@
-# Makefile for building the "school" executable
-
-# Compiler and Compiler Flags
 CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-# Source files
-SRC = main.c school.c
+.PHONY: all clean oclean fclean re
 
-# Object files (generate .o filenames from .c filenames)
-OBJ = $(SRC:.c=.o)
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
-# Check for missing header file
-$(NAME): m.h
-
-# Executable name
-NAME = school
-
-# Default target
-all: $(NAME)
-
-# Compile and link the executable
-$(NAME): $(OBJ)
-	$(CC) $^ -o $@ $(CFLAGS)
-
-# Rule to compile source files to object files
-%.o: %.c
-	$(CC) -c $< -o $@ $(CFLAGS)
-
-# Clean rule to delete temporary files and the executable
 clean:
-	-$(RM) *~ \#*\# $(NAME)
+	$(RM) *~ $(NAME)
 
-# Rule to delete object files
 oclean:
-	-$(RM) $(OBJ)
+	$(RM) $(OBJ)
 
-# Rule to clean temporary files, the executable, and object files
 fclean: clean oclean
 
-# Rule to force recompilation of all source files
 re: fclean all
-
-.PHONY: all clean oclean fclean re
